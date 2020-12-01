@@ -64,7 +64,7 @@ def morphs_dict():
             else:  # микс потом надо разбить. иногда меняет их глоссу на .
                 if m[i] in dt.keys() and g[i] not in dt[m[i]][1]:
                     new = dt[m[i]][1] + ';' + g[i]
-                    dt[m[i]] = ['mix', new, dt[m[i]][2], dt[m[i]][3] + 1]
+                    dt[m[i]] = ['mix', new, dt[m[i]][2], dt[m[i]][3] + 1]  # mix это глаголы с инфиксом
                 elif m[i] not in dt.keys():
                     dt[m[i]] = ['mix', g[i], p, 1]
                 else:
